@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: #001;
+	font-family: 'Inter', sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	color: #fff;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-section {
+	position: relative;
+	height: 200vh; /* This creates the scroll duration */
+}
+
+.cards-container {
+	position: sticky;
+	top: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	//flex-direction: column-reverse;
+	overflow: hidden; /* Hide overflow during the scatter animation */
+}
+
+.card {
+	width: 350px;
+	height: 500px;
+	border-radius: 15px;
+	background-color: #3f51b5;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	position: absolute;
+	transform: none;
+
+	.card-inner {
+		width: 100%;
+		height: 100%;
+		border-radius: 15px;
+		background-color: transparent;
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.5rem;
+		font-weight: bold;
+		will-change: transform;
+
+		&[data-card-index='0'] {
+			background-color: #e91e63;
+		}
+
+		&[data-card-index='1'] {
+			background-color: #9c27b0;
+		}
+
+		&[data-card-index='2'] {
+			background-color: #3f51b5;
+		}
+
+		&[data-card-index='3'] {
+			background-color: #2196f3;
+		}
+
+		&[data-card-index='4'] {
+			background-color: #4caf50;
+		}
+	}
+}
+
+/* Optional: Additional styling for the layout */
+.marquee-section {
+	width: 100vw;
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+
+	.marquee-container {
+		width: 100%;
+		white-space: nowrap;
+
+		.marquee-inner {
+			display: flex;
+
+			.marquee-text {
+				opacity: 0.3;
+				/* Add styling for your text here */
+				font-size: 10rem;
+				font-family: 'Inter', sans-serif;
+				word-spacing: -0.2rem;
+				font-weight: bold;
+				padding-right: 2rem; /* Adds space between the repeating text */
+			}
+		}
+	}
+
+	&.marquee-right {
+		margin-top: 0.6rem; /* Adjust spacing between marquees */
+	}
+}
