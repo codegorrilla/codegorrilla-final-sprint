@@ -244,7 +244,7 @@ function setupOpposingMarquees(duration) {
 	Observer.create({
 		onUp: () => speedTo(baseSpeed + 1), // Speed up on scroll up
 		onDown: () => speedTo(baseSpeed + 3), // Speed up on scroll down
-		onStop: () => speedTo(baseSpeed), // Return to normal speed when scroll stops
+		onStop: () => speedTo(baseSpeed - 1), // Return to normal speed when scroll stops
 		tolerance: 10,
 		preventDefault: false,
 		type: 'wheel,touch,pointer',
