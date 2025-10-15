@@ -92,3 +92,18 @@
 		flex: 1;
 	}
 }
+
+//about section
+.custom {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	align-items: center;
+	justify-content: flex-start;
+
+	h1 {
+		align-self: flex-start;
+		width: 400px;
+		line-height: 1;
+	}
+}

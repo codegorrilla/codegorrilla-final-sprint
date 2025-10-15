@@ -1,10 +1,16 @@
 .inversion-lens {
 	position: relative;
-	width: 100vw;
-	height: 100svh;
+	width: 300px;
+	height: 450px;
+	border-radius: 10px;
 	overflow: hidden;
+	transform: rotate(5deg);
 
 	img {
+		width: 100%;
+		height: auto;
 		display: none;
+		object-fit: cover;
+		object-position: center;
 	}
 }
