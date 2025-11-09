@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Speed-Controlled SVG Divider</title>
+	</head>
+	<body>
+		<div class="section section-1">
+			<h1>Scroll Faster to See a Deeper Curve!</h1>
+		</div>
+
+		<div
+			class="section section-2"
+			id="trigger-section"
+		>
+			<div class="divider-container">
+				<svg viewBox="0 0 100 10">
+					<path
+						id="myPath"
+						d="M 0 5 C 25 5, 75 5, 100 5"
+					></path>
+				</svg>
+			</div>
+		</div>
+
+		<div class="section section-3">
+			<h1>Animation Complete</h1>
+		</div>
+
+		<script
+			type="module"
+			src="./js/app.js"
+		></script>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<section
+			id="first"
+			class="container"
+		>
+			<h1>Spring-like Divider Animation</h1>
+
+			<button id="animateButton">Animate</button>
+		</section>
+
+		<section
+			id="second"
+			class="container"
+		>
+			<p>this is just another section</p>
+		</section>
+
+		<section
+			id="third"
+			class="container"
+		>
+			<p>third section</p>
+			<div class="divider-container">
+				<svg viewBox="0 0 100 10">
+					<!-- The path starts as a curved line -->
+					<path
+						id="myPath"
+						d="M 0 5 C 25 0, 75 0, 100 5"
+					></path>
+				</svg>
+			</div>
+			<div class="footer-text">
+				All contents &copy; 2024 Your Company. All rights reserved.
+			</div>
+		</section>
+
+		<!-- <section class="container">
+			<p>footer</p>
+		</section> -->
+
+		<script
+			type="module"
+			src="./js/app.js"
+		></script>
+	</body>
+</html>

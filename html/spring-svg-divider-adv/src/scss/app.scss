@@ -1,0 +1,38 @@
+body {
+	width: 100%;
+	min-height: 100vh;
+	background-color: #f0f0f0;
+	font-family: sans-serif;
+	margin: 0;
+}
+.section {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	text-align: center;
+}
+.section-1 {
+	background-color: #d8e2dc;
+}
+.section-2 {
+	background-color: #ffe5d9;
+}
+.section-3 {
+	background-color: #fca3b8;
+}
+.divider-container {
+	width: 80%;
+}
+svg {
+	width: 100%;
+	height: auto;
+	overflow: visible;
+}
+#myPath {
+	fill: none;
+	stroke: #333;
+	stroke-width: 0.1;
+	stroke-linecap: round;
+}
